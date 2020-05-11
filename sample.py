@@ -43,7 +43,9 @@ if __name__ == '__main__':
                  'lab5',
                  'lab6',
                  'lab7',
-                 'lab8']
+                 'lab8',
+                 'a1',
+                 'a2' ]
 
     success_count = 0
     fail_count = 0
