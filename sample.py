@@ -52,7 +52,7 @@ if __name__ == '__main__':
     for sub_dir in dir_list:
         sub_dir_path = base_dir + '/ops435/' + sub_dir
         if os.path.isdir(sub_dir_path) == True:
-            print('Subdirectory',sub_dir_path,'already exist, skipped.')
+            print('Subdirectory',sub_dir_path,'already exist, skipped.',file=sys.stderr)
             fail_count += 1
         else:
             try:
@@ -60,7 +60,7 @@ if __name__ == '__main__':
                 print('Subdirectory',sub_dir_path,'created.')
                 success_count += 1
             except:
-                print('Trouble creating',sub_dir_path,'- directory not created.')
+                print('Trouble creating',sub_dir_path,'- directory not created.',file=sys.stderr)
                 error_count += 1
     
     print('Script execution summary:')
